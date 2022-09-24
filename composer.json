@@ -1,0 +1,36 @@
+{
+  "name": "itsvijaykr/theofficialvkr-library",
+  "description": "PHP wrapper for youtube-dl",
+  "license": "GPL-3.0-only",
+  "homepage": "http://theofficialvkr.ml/",
+  "require": {
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^7.5",
+    "psr/log": "^3.0",
+    "symfony/process": "^6.1"
+  },
+  "require-dev": {
+    "phpro/grumphp": "^1.13.0",
+    "phpstan/phpstan": "^1.8.6",
+    "roave/security-advisories": "dev-master",
+    "squizlabs/php_codesniffer": "^3.7",
+    "symfony/var-dumper": "^6.1"
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "8.1"
+    },
+    "allow-plugins": {
+      "phpro/grumphp": true
+    }
+  },
+  "scripts": {
+    "lint": "grumphp run --ansi"
+  },
+  "autoload": {
+    "psr-4": {
+      "Theofficialvkr\\Library\\": "classes/"
+    }
+  }
+}

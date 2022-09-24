@@ -1,2 +1,12 @@
+---
 grumphp:
-    tasks: { composer: ~, jsonlint: ~, yamllint: ~, xmllint: ~ } 
+  ascii: ~
+  tasks:
+    jsonlint: ~
+    xmllint: ~
+    yamllint: ~
+    composer: ~
+    phpcs:
+      standard: PSR12
+    phpstan:
+      level: max
